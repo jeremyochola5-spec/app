@@ -1,0 +1,124 @@
+{
+  "theme": "LIGHT",
+  "archetype": "1 (Organic & Earthy)",
+  "vibe": "Trustworthy, grounded, clear, and community-focused. Modern earthy fintech with calm neutrals and a mature green to reflect the M-Pesa root.",
+  "typography": {
+    "fonts": [
+      {
+        "family": "Cabinet Grotesk",
+        "role": "Headings",
+        "weights": ["400", "700", "800", "900"],
+        "fallback": "sans-serif"
+      },
+      {
+        "family": "Manrope",
+        "role": "Body & UI text",
+        "weights": ["400", "500", "600"],
+        "fallback": "sans-serif"
+      }
+    ],
+    "rules": {
+      "h1": "text-4xl md:text-5xl lg:text-6xl tracking-tight font-black",
+      "h2": "text-2xl md:text-3xl lg:text-4xl tracking-tight font-bold",
+      "h3": "text-xl md:text-2xl font-bold tracking-tight",
+      "body": "text-base leading-relaxed",
+      "labels": "text-xs uppercase tracking-[0.2em] font-semibold text-muted-foreground",
+      "metrics": "text-4xl md:text-5xl font-black tracking-tighter text-primary"
+    }
+  },
+  "colors": {
+    "background": "#F9F8F6",
+    "surface": "#FFFFFF",
+    "primary": "#1A4D2E",
+    "primary_foreground": "#FFFFFF",
+    "secondary": "#E27D60",
+    "secondary_foreground": "#FFFFFF",
+    "accent": "#EBE8E0",
+    "accent_foreground": "#1B1B1B",
+    "muted": "#F0EFEA",
+    "muted_foreground": "#6E6D68",
+    "border": "#E2E0D8",
+    "text": "#1B1B1B",
+    "success": "#2D6A4F",
+    "error": "#D90429",
+    "radius": "0.75rem"
+  },
+  "layout_and_spacing": {
+    "spacing_scale": "Generous spacing. Use p-8 or p-12 for major card padding. Gaps in grid should be gap-6 or gap-8.",
+    "container_max_width": "max-w-7xl mx-auto px-4 md:px-8",
+    "landing_page_grid": "Bento Grid (Mode A) with asymmetry. Mix 2-col and 1-col cards.",
+    "dashboard_grid": "Control Room Grid (Mode B). Progressive disclosure. Primary metric top-left.",
+    "surfaces": "Dashboard widgets are solid surface (#FFFFFF) on off-white background (#F9F8F6) with subtle 1px border (border-border). Soft shadow on hover only. No heavy drop shadows by default."
+  },
+  "components": {
+    "buttons": "Shadcn UI Button. Rounded-xl or rounded-full. Primary uses #1A4D2E, hover #133922. Secondary uses #E27D60.",
+    "cards": "Flat, 1px solid border (#E2E0D8), no shadow. Rounded-2xl.",
+    "inputs": "Shadcn Input/Select. Background #FFFFFF, border #E2E0D8, focus ring #1A4D2E. Text Manrope.",
+    "charts": "Shadcn Charts (Recharts). Use Forest Green and Terracotta for chart lines/bars. Avoid default Tailwind blues.",
+    "navigation": "Sticky top nav with Glassmorphism (backdrop-blur-xl bg-white/70, border-b border-border/40). Always show key links and main CTA."
+  },
+  "pages": {
+    "landing_page": {
+      "sections": ["Hero with abstract 3D visual", "Features (Bento grid)", "How Saccos work (step-by-step)", "Testimonials (lifestyle images)", "CTA footer"],
+      "vibe": "High visual impact, emotional storytelling about community savings."
+    },
+    "dashboard_user": {
+      "layout": "Sidebar navigation or top nav. Main area: 3-column grid.",
+      "widgets": ["Total Savings Balance (Hero Metric)", "Recent M-Pesa Transactions", "My Saccos (List with % contribution rings)", "Quick Actions (Deposit/Withdraw)"]
+    },
+    "saccos_page": {
+      "layout": "List/Grid view of available Saccos. Detail page shows Members list and horizontal bar charts or radial progress showing % contribution."
+    },
+    "dashboard_admin": {
+      "layout": "Dense data table view using Shadcn Table. Overview cards for Total Platform Savings, Total Users, Total Saccos."
+    }
+  },
+  "media": {
+    "hero_abstract": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/df65df23-48f2-400b-8fab-a92f44df6424/images/2d310272651cb2324b40c4cd441df8047e47bb00a178c5dad69ee345881d8063.png",
+      "description": "Abstract 3D interlocking coins representing community growth.",
+      "usage": "Landing page hero section right side image."
+    },
+    "lifestyle_fintech": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/df65df23-48f2-400b-8fab-a92f44df6424/images/c949ee99d468e17a34e96dc5d081e06e66c8d8d021facac844a884625a1cfd02.png",
+      "description": "Elegant smartphone on oak table with plant.",
+      "usage": "Features section or about section on landing page."
+    },
+    "mobile_payment_1": {
+      "url": "https://images.pexels.com/photos/5239819/pexels-photo-5239819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Person paying using smartphone.",
+      "usage": "Personal Savings / M-Pesa integration feature showcase."
+    },
+    "mobile_payment_2": {
+      "url": "https://images.unsplash.com/photo-1533234944761-2f5337579079?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHwyfHxtb2JpbGUlMjBwaG9uZSUyMHBheW1lbnQlMjBhZnJpY2F8ZW58MHx8fHwxNzgwMTQ0NjE5fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Smartphone beside banknotes.",
+      "usage": "Transaction history or deposit banner."
+    },
+    "community_sacco_1": {
+      "url": "https://images.unsplash.com/photo-1511988617509-a57c8a288659?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwyfHxmcmllbmRzJTIwbGF1Z2hpbmclMjB0b2dldGhlciUyMGNhc3VhbHxlbnwwfHx8fDE3ODAxNDQ2MTl8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Friends laughing together.",
+      "usage": "Saccos / Group savings feature hero."
+    },
+    "community_sacco_2": {
+      "url": "https://images.pexels.com/photos/3768884/pexels-photo-3768884.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Four friends laughing and chatting outdoors.",
+      "usage": "Testimonials or community section."
+    }
+  },
+  "icons": {
+    "library": "lucide-react",
+    "style": "Use moderate stroke-width (2px), keep them crisp."
+  },
+  "testing_rules": {
+    "data_testid_requirements": "All interactive elements (buttons, links, form inputs) and key data displays (balance, sacco percentages) MUST have a role-based data-testid attribute in kebab-case."
+  },
+  "instructions_to_main_agent": [
+    "Use standard Tailwind CSS classes. Initialize Shadcn components for forms, dialogs, charts, and tables.",
+    "Do NOT use 'Inter' font. Import and configure 'Cabinet Grotesk' for headings and 'Manrope' for body.",
+    "Implement MOCKED M-Pesa deposit/withdraw flows. Users should type an amount and phone number, then simulate a prompt and update balance.",
+    "Sacco mathematics: Sum total Sacco balance. For each member, calculate (member_contribution / total_balance) * 100 to show their percentage.",
+    "Authentication can be simulated or built via a mock DB (e.g., local storage or simple SQLite/JSON) so user state persists across dashboard reloads.",
+    "Ensure the Admin Dashboard checks for an 'admin' role or specific admin credentials.",
+    "Do not use generic blue gradients. Stick to the Earthy palette provided."
+  ]
+}
